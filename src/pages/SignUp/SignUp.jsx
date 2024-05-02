@@ -58,7 +58,7 @@ const SignUp = () => {
                     onBlur={handleBlur}
                     value={values.taiKhoan}
                     label="Tài khoản"
-                    placeholder="Nhập tên phim"
+                    placeholder="Nhập tên tài khoản"
                     id="taiKhoan"
                     error={errors.taiKhoan}
                     touched={touched.taiKhoan}
