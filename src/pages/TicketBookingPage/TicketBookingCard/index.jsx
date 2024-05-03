@@ -44,8 +44,6 @@ const TicketBookingCard = () => {
   const movie = ticketBookingDetails.data?.data?.content?.thongTinPhim;
   const loading = ticketBookingDetails.loading;
 
-  const [openModal, setOpenModal] = useState(false); // State local cho trạng thái modal
-
   const renderSelectedSeats = () =>
     selectedSeats?.map((selectedSeat, idx) => {
       const endLine = idx === selectedSeats.length - 1;
@@ -77,11 +75,6 @@ const TicketBookingCard = () => {
 
     dispatch(bookTicket(ticket));
     // setOpenModal(true);
-  };
-
-  const handleAcceptModal = () => {
-    dispatch(clearBooking()); // Xóa dữ liệu ghế đã chọn khi người dùng chấp nhận
-    setOpenModal(false); // Đóng modal
   };
 
   return (

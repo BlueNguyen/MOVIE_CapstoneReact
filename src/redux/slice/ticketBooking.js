@@ -133,6 +133,7 @@ const ticketBookingSlice = createSlice({
           ],
           path: "/",
         };
+        state.selectedSeats = []; // Xoá danh sách ghế đã chọn khi đặt vé thành công
       }
     });
     builder.addCase(bookTicket.rejected, (state, action) => {
@@ -142,6 +143,7 @@ const ticketBookingSlice = createSlice({
   },
 });
 
-export const { chooseSeat, closeModal, clearBooking } = ticketBookingSlice.actions;
+export const { chooseSeat, closeModal, clearBooking } =
+  ticketBookingSlice.actions;
 
 export default ticketBookingSlice.reducer;
