@@ -31,9 +31,9 @@ function Footer() {
         className=""
       >
         <Grid container sx={{ mx: "auto" }} className="footer__apps">
-          <a className="footer__app-item" href="#">
+          {/* <a className="footer__app-item" href="#">
             <Image src="https://miro.medium.com/v2/resize:fit:816/1*sSR4mrpijxoQrD7HKu8nDw.png" />
-          </a>
+          </a> */}
         </Grid>
         <Grid container className="footer__list">
           <Grid item xs={12} md={3} className="footer__list-item">

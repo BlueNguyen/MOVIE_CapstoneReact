@@ -76,7 +76,7 @@ const TicketBookingCard = () => {
     };
 
     dispatch(bookTicket(ticket));
-    setOpenModal(true);
+    // setOpenModal(true);
   };
 
   const handleAcceptModal = () => {
